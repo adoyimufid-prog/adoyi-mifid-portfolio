@@ -1,6 +1,25 @@
+# Dependances
 node_modules/
+
+# Sorties de construction
 .next/
-.env
+out/
+dist/
+
+# Journaux et fichiers temporaires
 *.log
-bun.lock
-package-lock.json
+dev.log
+server.log
+
+# Secrets et environnement
+.env
+.env.*
+!.env.example
+
+# Sauvegardes creees pendant les corrections
+*.avant-corrections
+*.avant-langage
+
+# Systeme
+.DS_Store
+Thumbs.db

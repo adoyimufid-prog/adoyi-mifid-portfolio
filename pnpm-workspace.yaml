@@ -1,0 +1,14 @@
+allowBuilds:
+  '@parcel/watcher': set this to true or false
+  '@swc/core': set this to true or false
+  es5-ext: set this to true or false
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
+# pnpm 10 lit ici la liste des paquets autorises a executer leurs scripts d'installation.
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - es5-ext
+  - esbuild
+  - sharp
+  - unrs-resolver

@@ -1,0 +1,15 @@
+# Site statique : Next produit le dossier out/, Netlify le sert tel quel.
+[build]
+  command = "npx next build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Les fichiers versionnes (images, polices, CV) ne changent pas de nom :
+# on les laisse en cache court pour que les mises a jour soient visibles vite.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

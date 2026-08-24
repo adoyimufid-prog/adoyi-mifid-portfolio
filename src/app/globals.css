@@ -90,6 +90,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Les cercles decoratifs en position absolue depassaient de 14px sur mobile
+       et provoquaient un defilement horizontal de toute la page. */
+    overflow-x: hidden;
   }
   html {
     scroll-behavior: smooth;

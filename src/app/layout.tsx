@@ -13,15 +13,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Le nom complet est la seule requête sur laquelle il n'y a aucune concurrence :
+// il ouvre le titre, dans l'ordre exact utilisé sur LinkedIn.
+const TITRE = "Mifid ADOYI GADO | Business Development & Partenariats stratégiques";
+const RESUME =
+  "Business developer à Lomé, Togo. 800+ inscrits acquis pour la Semaine de la Logistique, 5M+ FCFA de partenariats mobilisés auprès du PNUD, de la GIZ et de la Chambre de Commerce, 2 000+ prospects contactés en Afrique de l'Ouest.";
+
 export const metadata: Metadata = {
-  title: "Adoyi Gado Mifid | Growth Marketing & Prospection",
-  description: "Portfolio d'Adoyi Gado Mifid - Spécialiste en Growth Marketing & Prospection basé à Lomé, Togo. 3+ ans d'expérience, data-driven.",
-  keywords: ["Growth Marketing", "Prospection B2B", "Acquisition", "Marketing Digital", "Lomé", "Togo", "Adoyi Mifid"],
-  authors: [{ name: "Adoyi Gado Mifid" }],
+  title: TITRE,
+  description: RESUME,
+  keywords: [
+    "Mifid Adoyi Gado",
+    "Business Development",
+    "Partenariats stratégiques",
+    "Prospection B2B",
+    "Growth Marketing",
+    "Logistique",
+    "Supply Chain",
+    "Lomé",
+    "Togo",
+    "Afrique de l'Ouest",
+  ],
+  authors: [{ name: "Mifid ADOYI GADO" }],
   openGraph: {
-    title: "Adoyi Gado Mifid | Growth Marketing & Prospection",
-    description: "Spécialiste en Growth Marketing & Prospection - Lomé, Togo",
-    type: "website",
+    title: TITRE,
+    description: RESUME,
+    type: "profile",
+    locale: "fr_FR",
   },
 };
 
@@ -31,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >

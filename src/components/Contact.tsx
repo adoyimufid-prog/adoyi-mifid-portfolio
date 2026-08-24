@@ -17,11 +17,36 @@ interface ContactProps {
 export default function Contact({ lang }: ContactProps) {
   const t = translations[lang].contact;
   const [sent, setSent] = useState(false);
+  const [erreur, setErreur] = useState(false);
+  const [envoiEnCours, setEnvoiEnCours] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  // Envoi reel via Netlify Forms : le formulaire est detecte au build,
+  // et chaque message arrive par email sur l'adresse configuree dans Netlify.
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
+    setErreur(false);
+    setEnvoiEnCours(true);
+
+    const form = e.currentTarget;
+    const donnees = new URLSearchParams(
+      new FormData(form) as unknown as Record<string, string>,
+    ).toString();
+
+    try {
+      const reponse = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: donnees,
+      });
+      if (!reponse.ok) throw new Error(String(reponse.status));
+      form.reset();
+      setSent(true);
+      setTimeout(() => setSent(false), 5000);
+    } catch {
+      setErreur(true);
+    } finally {
+      setEnvoiEnCours(false);
+    }
   };
 
   return (
@@ -130,12 +155,28 @@ export default function Contact({ lang }: ContactProps) {
           >
             <Card className="border-0 shadow-md bg-white">
               <CardContent className="p-6 sm:p-8">
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-5"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                >
+                  {/* Requis par Netlify pour rattacher l'envoi au bon formulaire. */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  {/* Piege a robots : invisible pour un humain, rempli par les spammeurs. */}
+                  <p className="hidden" aria-hidden="true">
+                    <label>
+                      Ne pas remplir <input name="bot-field" tabIndex={-1} />
+                    </label>
+                  </p>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <Label htmlFor="name">{t.form.name}</Label>
                       <Input
                         id="name"
+                        name="name"
                         required
                         placeholder={t.form.name}
                         className="bg-[#F8F6F1] border-0 focus-visible:ring-[#C9A84C]/30"
@@ -145,6 +186,7 @@ export default function Contact({ lang }: ContactProps) {
                       <Label htmlFor="email">{t.form.email}</Label>
                       <Input
                         id="email"
+                        name="email"
                         type="email"
                         required
                         placeholder={t.form.email}
@@ -156,6 +198,7 @@ export default function Contact({ lang }: ContactProps) {
                     <Label htmlFor="subject">{t.form.subject}</Label>
                     <Input
                       id="subject"
+                      name="subject"
                       required
                       placeholder={t.form.subject}
                       className="bg-[#F8F6F1] border-0 focus-visible:ring-[#C9A84C]/30"
@@ -165,19 +208,32 @@ export default function Contact({ lang }: ContactProps) {
                     <Label htmlFor="message">{t.form.message}</Label>
                     <Textarea
                       id="message"
+                      name="message"
                       required
                       rows={5}
                       placeholder={t.form.message}
                       className="bg-[#F8F6F1] border-0 focus-visible:ring-[#C9A84C]/30 resize-none"
                     />
                   </div>
+                  {erreur && (
+                    <p
+                      role="alert"
+                      className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-lg px-4 py-3"
+                    >
+                      {lang === 'fr'
+                        ? 'L’envoi a échoué. Écrivez-moi directement à adoyimufid@gmail.com.'
+                        : 'Sending failed. Email me directly at adoyimufid@gmail.com.'}
+                    </p>
+                  )}
                   <Button
                     type="submit"
                     size="lg"
-                    disabled={sent}
+                    disabled={sent || envoiEnCours}
                     className="w-full bg-[#C9A84C] hover:bg-[#B8963F] text-white rounded-xl h-12 text-base font-semibold shadow-lg shadow-[#C9A84C]/20"
                   >
-                    {sent ? (
+                    {envoiEnCours ? (
+                      <>{lang === 'fr' ? 'Envoi en cours…' : 'Sending…'}</>
+                    ) : sent ? (
                       <>
                         <CheckCircle className="size-4 mr-2" />
                         {t.form.success}

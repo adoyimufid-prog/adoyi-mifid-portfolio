@@ -87,7 +87,7 @@ export default function Navbar({ lang, setLang }: NavbarProps) {
                   variant="outline"
                   size="sm"
                   onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')}
-                  className="gap-1.5 text-xs font-semibold border-[#C9A84C]/30 text-[#C9A84C] hover:bg-[#C9A84C] hover:text-white hover:border-[#C9A84C] rounded-full px-3"
+                  className="min-h-11 min-w-11 cursor-pointer gap-1.5 text-xs font-semibold border-[#C9A84C]/30 text-[#C9A84C] hover:bg-[#C9A84C] hover:text-white hover:border-[#C9A84C] rounded-full px-4"
                 >
                   <Globe className="size-3.5" />
                   {lang === 'fr' ? 'EN' : 'FR'}
@@ -98,7 +98,11 @@ export default function Navbar({ lang, setLang }: NavbarProps) {
             {/* Mobile Hamburger */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="md:hidden size-11 cursor-pointer"
+                >
                   <Menu className="size-5" />
                   <span className="sr-only">Menu</span>
                 </Button>

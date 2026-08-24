@@ -12,21 +12,21 @@ export const translations = {
     },
     hero: {
       name: 'ADOYI GADO MIFID',
-      title: 'Charg\u00e9 de Growth Marketing & Prospection',
+      title: 'Business Development & Partenariats Stratégiques',
       tagline:
-        'Je transforme les donn\u00e9es en croissance. Sp\u00e9cialiste de l\u2019acquisition utilisateur et de la prospection B2B avec une approche data-driven.',
+        'Je pars de zéro, et je remplis la salle. Neuf missions, le même mouvement : créer l’audience qui n’existe pas encore, puis la convertir.',
       downloadCv: 'T\u00e9l\u00e9charger CV',
       contactMe: 'Me Contacter',
     },
     about: {
       sectionTitle: '\u00c0 propos de moi',
       profile:
-        "Sp\u00e9cialiste de l\u2019acquisition et du d\u00e9veloppement commercial avec plus de 3 ans d\u2019exp\u00e9rience en environnement \u00e0 forte croissance (startup, r\u00e9seaux internationaux). Expert dans la traduction d\u2019objectifs strat\u00e9giques en campagnes d\u2019acquisition percutantes (0 \u2192 800+ utilisateurs) et en prospection B2B. Au cours de mes exp\u00e9riences AIESEC, j\u2019ai r\u00e9ussi \u00e0 mobiliser plus de 3 000 000 FCFA en sponsoring pour des activit\u00e9s de jeunes. Dot\u00e9 d\u2019une forte autonomie et orient\u00e9 donn\u00e9es.",
+        "En 2025, je suis monté à bord des navires du Port de Lomé pour apprendre la logistique là où elle se fait. Un an plus tard, je coordonne l’exécutif de l’ATLOG, l’association professionnelle du secteur au Togo. Entre les deux, j’ai fait ce que je sais faire de mieux : créer une audience là où il n’y en avait aucune, puis la transformer en inscriptions, en partenaires et en clients. Cinq ans de développement commercial et de croissance, en startup comme en réseau international, sur des marchés à ouvrir. Et quand l’outil manque, je l’écris : pour le SLSC, un parcours d’inscription par chatbot avec avatar conversationnel ; pour les salles de sport de Lomé, Kéti, un logiciel que je conçois et développe moi-même.",
       stats: [
-        { value: '3+', label: "Ans d'Exp\u00e9rience" },
+        { value: '5+', label: "Ans d'Exp\u00e9rience" },
         { value: '800+', label: 'Utilisateurs Acquis' },
-        { value: '5900%', label: 'Croissance LinkedIn' },
-        { value: '3M+', label: 'FCFA Sponsoring Mobilis\u00e9' },
+        { value: 'de 10 à 600', label: 'Croissance LinkedIn en 8 semaines' },
+        { value: '5M+', label: 'FCFA Sponsoring Mobilis\u00e9' },
         { value: '20+', label: 'Comit\u00e9s Couverts' },
       ],
     },
@@ -58,7 +58,7 @@ export const translations = {
             "Direction d\u2019une campagne d\u2019acquisition multi-canal (Social Media organique et payant, WhatsApp Marketing, \u00e9v\u00e9nementiel terrain) avec un suivi rigoureux des KPIs pour la Semaine de la Logistique et de la Supply Chain (SLSC 2025), initiative de l\u2019ATLOG.",
             "Conception et gestion de la base de donn\u00e9es des participants, mise en place du formulaire d\u2019inscription via chatbot, et cr\u00e9ation d\u2019un avatar conversationnel (Rachelle) pour humaniser le parcours d\u2019inscription et renforcer la confiance.",
             "Croissance spectaculaire de la base d\u2019utilisateurs : de 0 \u00e0 800+ participants B2C inscrits en 8 semaines, principalement des professionnels et \u00e9tudiants de la supply chain.",
-            "Explosion de la pr\u00e9sence organique sur LinkedIn (+5 900%, passant de 10 \u00e0 600+ abonn\u00e9s cibl\u00e9s) et cr\u00e9ation d\u2019une communaut\u00e9 WhatsApp engag\u00e9e de 430 membres.",
+            "Croissance de la pr\u00e9sence organique sur LinkedIn, de 10 \u00e0 plus de 600 abonn\u00e9s cibl\u00e9s, et cr\u00e9ation d\u2019une communaut\u00e9 WhatsApp engag\u00e9e de 430 membres.",
             "Multiplication par 9 de l\u2019engagement Facebook (de 155 \u00e0 1 400+ interactions) via une strat\u00e9gie de contenu par phases teasers-lancement-suivi.",
             "Pilotage d\u2019une \u00e9quipe cr\u00e9ative de 10 personnes (designers, vid\u00e9astes, community manager) avec une ligne \u00e9ditoriale claire et coh\u00e9rente, et coordination de la communication avant, pendant et apr\u00e8s l\u2019\u00e9v\u00e9nement.",
           ],
@@ -78,7 +78,7 @@ export const translations = {
           ],
         },
         {
-          role: 'Country Director',
+          role: 'Président national',
           company: 'AIESEC au Togo',
           companyUrl: 'https://aiesec.org/',
           location: 'Lom\u00e9, Togo',
@@ -89,7 +89,7 @@ export const translations = {
             "Direction g\u00e9n\u00e9rale de l\u2019entit\u00e9 AIESEC au Togo : pilotage strat\u00e9gique, supervision de 4 d\u00e9partements et coordination des op\u00e9rations nationales pendant 2 mandats cons\u00e9cutifs (juillet 2023 \u2013 juin 2025).",
             "Prospection B2B et d\u00e9veloppement de pipelines de partenaires institutionnels et priv\u00e9s de premier plan : PIA (Plateforme Industrielle d\u2019Ad\u00e9tikop\u00e9), PNUD, CCI-Togo (Chambre de Commerce et d\u2019Industrie du Togo), GIZ, YAS, Moov Africa, Ambassade de l\u2019Inde, ATLOG, Impact Hub Cotonou.",
             "Conception, organisation et activation de 4 s\u00e9minaires nationaux Leadership Development Seminar de AIESEC au Togo, rassemblant \u00e0 chacun pr\u00e8s de 100 jeunes venus des 4 coins de l\u2019Afrique de l\u2019Ouest. Co-organisation du West Africa Connecting Seminar de AIESEC.",
-            "Mobilisation de plus de 3 000 000 FCFA en sponsoring et partenariats au cours de l\u2019ensemble des mandats, s\u00e9curisant ainsi le financement des activit\u00e9s.",
+            "Mobilisation de plus de 5 000 000 FCFA en sponsoring et partenariats au cours de l\u2019ensemble des mandats, s\u00e9curisant ainsi le financement des activit\u00e9s.",
             "Production de rapports strat\u00e9giques trimestriels et pr\u00e9sentations devant les partenaires pour documenter l\u2019impact, s\u00e9curiser les financements et assurer la p\u00e9rennit\u00e9 organisationnelle.",
           ],
         },
@@ -103,15 +103,15 @@ export const translations = {
           bullets: [
             "Prospection commerciale active et structur\u00e9e : identification, approche et n\u00e9gociation de contrats de sponsoring et de partenariats avec des entreprises priv\u00e9es et institutions de la r\u00e9gion de Kara.",
             "Conception et ex\u00e9cution de campagnes d\u2019outreach et d\u2019activation de march\u00e9 ayant mobilis\u00e9 plus de 500 participants \u00e0 travers 3 \u00e9ditions d\u2019\u00e9v\u00e9nements locaux.",
-            "Contribution \u00e0 la mobilisation de plus de 3 000 000 FCFA en sponsoring cumul\u00e9 sur l\u2019ensemble des exp\u00e9riences AIESEC, via la diversification des sources (entreprises, ONG, institutions publiques) et l\u2019optimisation des propositions de valeur partenariales.",
+            "Diversification des sources de financement (entreprises, ONG, institutions publiques) et optimisation des propositions de valeur partenariales, pour s\u00e9curiser le financement des programmes locaux.",
           ],
         },
       ],
     },
     skills: {
       sectionTitle: 'Comp\u00e9tences',
-      hardTitle: 'Hard Skills',
-      softTitle: 'Soft Skills',
+      hardTitle: 'Compétences métier',
+      softTitle: 'Façon de travailler',
       hardSkills: [
         { name: 'Prospection B2B & Dripify', level: 95 },
         { name: "Campagnes d\u2019Acquisition (Meta, LinkedIn)", level: 90 },
@@ -122,11 +122,11 @@ export const translations = {
         { name: 'HubSpot & Apify (bases)', level: 65 },
       ],
       softSkills: [
-        'Autonomie',
-        'Orientation R\u00e9sultats',
-        'Adaptabilit\u00e9 Agile',
-        'D\u00e9cision Data-Driven',
-        'Communication Interculturelle',
+        'Ouverture de marché',
+        'Relation institutionnelle',
+        'Pilotage d’équipe à distance',
+        'Rigueur du suivi et du reporting',
+        'Communication interculturelle',
       ],
     },
     portfolio: {
@@ -137,13 +137,13 @@ export const translations = {
           metric: '0 \u2192 800+',
           metricLabel: 'Participants B2C Acquis',
           description:
-            "Campagne d\u2019acquisition multi-canal pour la Semaine de la Logistique et de la Supply Chain (ATLOG). Strat\u00e9gie data-driven, chatbot d\u2019inscription, avatar conversationnel, et \u00e9quipe cr\u00e9ative de 10 personnes coordonn\u00e9e. +5900% de croissance LinkedIn.",
-          tags: ['Growth Marketing', 'Data-Driven', 'Multi-canal'],
+            "Campagne d\u2019acquisition multi-canal pour la Semaine de la Logistique et de la Supply Chain (ATLOG). Strat\u00e9gie data-driven, chatbot d\u2019inscription, avatar conversationnel, et \u00e9quipe cr\u00e9ative de 10 personnes coordonn\u00e9e. Communaut\u00e9 LinkedIn de 10 \u00e0 plus de 600 abonn\u00e9s.",
+          tags: ['Acquisition d’audience', 'Chatbot d’inscription', 'Multi-canal'],
           image: '/images/experiences/slsc-event.jpg',
         },
         {
           title: 'Partenariats B2B AIESEC',
-          metric: '3M+',
+          metric: '5M+',
           metricLabel: 'FCFA en Sponsoring',
           description:
             "D\u00e9veloppement de pipelines B2B avec des partenaires de premier plan (PIA, PNUD, CCI-Togo, GIZ, YAS, Moov Africa, Ambassade de l\u2019Inde, ATLOG, Impact Hub). Organisation de 4 s\u00e9minaires nationaux et co-organisation du WAC Seminar.",
@@ -186,7 +186,7 @@ export const translations = {
     },
     contact: {
       sectionTitle: 'Contact',
-      subtitle: "N\u2019h\u00e9sitez pas \u00e0 me contacter pour discuter de vos projets.",
+      subtitle: 'Je cherche une équipe où faire ça à plus grande échelle. Écrivez-moi, je réponds.',
       form: {
         name: 'Nom complet',
         email: 'Adresse email',
@@ -204,7 +204,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: '\u00a9 2025 Adoyi Gado Mifid. Tous droits r\u00e9serv\u00e9s.',
+      copyright: '\u00a9 2026 Adoyi Gado Mifid. Tous droits r\u00e9serv\u00e9s.',
       quickLinks: 'Liens Rapides',
       madeWith: 'Fait avec passion \u00e0 Lom\u00e9, Togo',
     },
@@ -220,21 +220,21 @@ export const translations = {
     },
     hero: {
       name: 'ADOYI GADO MIFID',
-      title: 'Growth Marketing & Prospection Specialist',
+      title: 'Business Development & Strategic Partnerships',
       tagline:
-        'I turn data into growth. User acquisition and B2B prospecting specialist with a data-driven approach.',
+        'I start from zero and I fill the room. Nine missions, one single move: build the audience that does not exist yet, then convert it.',
       downloadCv: 'Download CV',
       contactMe: 'Contact Me',
     },
     about: {
       sectionTitle: 'About Me',
       profile:
-        'Acquisition and business development specialist with over 3 years of experience in high-growth environments (startups, international networks). Expert in translating strategic objectives into high-impact acquisition campaigns (0 \u2192 800+ users) and B2B prospecting. Throughout my AIESEC experience, I successfully mobilized over 3,000,000 FCFA in sponsorships for youth activities. Strong autonomy and data-driven mindset.',
+        'In 2025 I boarded ships at the Port of Lomé to learn logistics where it actually happens. A year later, I coordinate the executive of ATLOG, the industry association in Togo. In between, I did what I do best: build an audience where there was none, then turn it into registrations, partners and customers. Five years of business development and growth, in startups and international networks, on markets that had to be opened. And when the tool is missing, I write it: a chatbot registration journey with a conversational avatar for SLSC, and Kéti, software I design and build myself for gyms in Lomé.',
       stats: [
-        { value: '3+', label: 'Years of Experience' },
+        { value: '5+', label: 'Years of Experience' },
         { value: '800+', label: 'Users Acquired' },
-        { value: '5900%', label: 'LinkedIn Growth' },
-        { value: '3M+', label: 'FCFA Sponsorship Mobilized' },
+        { value: 'de 10 à 600', label: 'LinkedIn growth in 8 weeks' },
+        { value: '5M+', label: 'FCFA Sponsorship Mobilized' },
         { value: '20+', label: 'Committees Covered' },
       ],
     },
@@ -266,7 +266,7 @@ export const translations = {
             "Directed a multi-channel acquisition campaign (organic & paid social media, WhatsApp Marketing, field events) with rigorous KPI tracking for the Logistics and Supply Chain Week (SLSC 2025), an ATLOG initiative.",
             "Designed and managed the participant database, implemented chatbot-based registration forms, and created a conversational avatar (Rachelle) to humanize the registration journey and build trust.",
             "Achieved spectacular user base growth: from 0 to 800+ B2C participant registrations in 8 weeks, primarily supply chain professionals and students.",
-            "Drove organic LinkedIn explosion (+5,900%, from 10 to 600+ targeted followers) and built an engaged WhatsApp community of 430 members.",
+            "Grew organic LinkedIn presence from 10 to 600+ targeted followers and built an engaged WhatsApp community of 430 members.",
             "Multiplied Facebook engagement by 9x (from 155 to 1,400+ interactions) through a phased content strategy (teasers-launch-follow-up).",
             "Led a creative team of 10 (designers, videographers, community manager) with a clear editorial line, and coordinated communication before, during, and after the event.",
           ],
@@ -286,7 +286,7 @@ export const translations = {
           ],
         },
         {
-          role: 'Country Director',
+          role: 'National President',
           company: 'AIESEC in Togo',
           companyUrl: 'https://aiesec.org/',
           location: 'Lom\u00e9, Togo',
@@ -297,7 +297,7 @@ export const translations = {
             "General management of AIESEC in Togo: strategic leadership, oversight of 4 departments, and coordination of national operations for 2 consecutive terms (July 2023 \u2013 June 2025).",
             "B2B prospecting and pipeline development with top-tier institutional and private partners: PIA (Plateforme Industrielle d\u2019Ad\u00e9tikop\u00e9), UNDP, CCI-Togo, GIZ, YAS, Moov Africa, Indian Embassy, ATLOG, Impact Hub Cotonou.",
             "Designed, organized, and activated 4 National Leadership Development Seminars, each bringing together nearly 100 youth from across West Africa. Co-organized the West Africa Connecting Seminar.",
-            "Mobilized over 3,000,000 FCFA in sponsorships and partnerships across all mandates, securing activity funding.",
+            "Mobilized over 5,000,000 FCFA in sponsorships and partnerships across all mandates, securing activity funding.",
             "Produced quarterly strategic reports and partner presentations to document impact, secure funding, and ensure organizational sustainability.",
           ],
         },
@@ -311,7 +311,7 @@ export const translations = {
           bullets: [
             "Active and structured commercial prospecting: identified, approached, and negotiated sponsorship contracts and partnerships with private companies and institutions in the Kara region.",
             "Designed and executed outreach campaigns and market activation that mobilized 500+ participants across 3 local event editions.",
-            "Contributed to mobilizing over 3,000,000 FCFA in cumulative sponsorships across all AIESEC experiences, through source diversification and partnership value proposition optimization.",
+            "Diversified funding sources (companies, NGOs, public institutions) and optimized partnership value propositions to secure local programme funding.",
           ],
         },
       ],
@@ -330,11 +330,11 @@ export const translations = {
         { name: 'HubSpot & Apify (basics)', level: 65 },
       ],
       softSkills: [
-        'Autonomy',
-        'Results-Oriented',
-        'Agile Adaptability',
-        'Data-Driven Decision Making',
-        'Intercultural Communication',
+        'Market opening',
+        'Institutional relations',
+        'Remote team leadership',
+        'Disciplined follow-up and reporting',
+        'Intercultural communication',
       ],
     },
     portfolio: {
@@ -345,13 +345,13 @@ export const translations = {
           metric: '0 \u2192 800+',
           metricLabel: 'B2C Participants Acquired',
           description:
-            'Multi-channel acquisition campaign for the Logistics and Supply Chain Week (ATLOG). Data-driven strategy, chatbot registration, conversational avatar, and a 10-person creative team coordinated. +5900% LinkedIn growth.',
-          tags: ['Growth Marketing', 'Data-Driven', 'Multi-channel'],
+            'Multi-channel acquisition campaign for the Logistics and Supply Chain Week (ATLOG). Data-driven strategy, chatbot registration, conversational avatar, and a 10-person creative team coordinated. LinkedIn community grown from 10 to 600+ followers.',
+          tags: ['Audience acquisition', 'Chatbot registration', 'Multi-channel'],
           image: '/images/experiences/slsc-event.jpg',
         },
         {
           title: 'AIESEC B2B Partnerships',
-          metric: '3M+',
+          metric: '5M+',
           metricLabel: 'FCFA in Sponsorships',
           description:
             'B2B pipeline development with top-tier partners (PIA, UNDP, CCI-Togo, GIZ, YAS, Moov Africa, Indian Embassy, ATLOG, Impact Hub). 4 national seminars organized and WAC Seminar co-organized.',
@@ -394,7 +394,7 @@ export const translations = {
     },
     contact: {
       sectionTitle: 'Contact',
-      subtitle: 'Feel free to reach out to discuss your projects.',
+      subtitle: 'I am looking for a team where I can do this at a bigger scale. Write to me, I answer.',
       form: {
         name: 'Full Name',
         email: 'Email Address',
@@ -412,7 +412,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: '\u00a9 2025 Adoyi Gado Mifid. All rights reserved.',
+      copyright: '\u00a9 2026 Adoyi Gado Mifid. All rights reserved.',
       quickLinks: 'Quick Links',
       madeWith: 'Made with passion in Lom\u00e9, Togo',
     },

@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
 import { Zap, Heart, Target, Lightbulb } from 'lucide-react';
 import { translations, type Language } from '@/lib/translations';
 
@@ -49,7 +48,7 @@ export default function Skills({ lang }: SkillsProps) {
                   {t.hardTitle}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-5">
+              <CardContent className="space-y-3">
                 {t.hardSkills.map((skill, i) => (
                   <motion.div
                     key={i}
@@ -57,24 +56,15 @@ export default function Skills({ lang }: SkillsProps) {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: i * 0.08 }}
+                    className="flex items-start gap-3"
                   >
-                    <div className="flex items-center justify-between mb-1.5">
-                      <span className="text-sm font-medium text-[#1B2A4A]">
-                        {skill.name}
-                      </span>
-                      <span className="text-xs font-semibold text-[#C9A84C]">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.3 + i * 0.08, ease: 'easeOut' }}
-                        className="h-full bg-gradient-to-r from-[#C9A84C] to-[#D4B85C] rounded-full"
-                      />
-                    </div>
+                    <span
+                      className="mt-2.5 h-px w-3 shrink-0 bg-[#C9A84C]"
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm font-medium text-[#1B2A4A]">
+                      {skill.name}
+                    </span>
                   </motion.div>
                 ))}
               </CardContent>

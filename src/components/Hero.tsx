@@ -104,11 +104,18 @@ export default function Hero({ lang }: HeroProps) {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button
+              asChild
               size="lg"
               className="bg-[#C9A84C] hover:bg-[#B8963F] text-white rounded-full px-8 h-12 text-base font-semibold shadow-lg shadow-[#C9A84C]/20"
             >
-              <Download className="size-4 mr-2" />
-              {t.downloadCv}
+              <a
+                href="/CV_ADOYI_GADO_MIFID.pdf"
+                download="CV_Adoyi_Gado_Mifid.pdf"
+                className="cursor-pointer"
+              >
+                <Download className="size-4 mr-2" />
+                {t.downloadCv}
+              </a>
             </Button>
             <Button
               variant="outline"
